@@ -29,11 +29,11 @@
 	<!-- NEW MAP image from show code -->
 	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImage.jpg"/></g>
 
-<!-- Images to float above and not be clickable -->
+<!-- Images to float above -->
 
-	<!-- <g style="display: block;">
-		<image id="foreLeft" class="fore" width="1151" height="1338" transform="translate(0 0.4785) scale(0.24)" xlink:href="images/fore.png"/>
-		<image id="foreClick" class="fore" width="347" height="250" transform="translate(235.3286 133.3973) scale(0.24)" xlink:href="images/click.png"/>
+<!-- 	<g style="display: block;">
+		<image id="pause" class="fore" width="40px" xlink:href="images/pause.png"/>
+		<image id="pauseClicked" class="fore" width="40px" xlink:href="images/pauseClicked.png"/>
 	</g> -->
 
 <!-- Clickable IDs -->
@@ -52,15 +52,15 @@
 <!-- Hover Highlights -->
 
 	<g id="highlights">
-		<image id="elAfiladorH" width="127" height="113" transform="translate(405.0616 253.4412) scale(0.36)" opacity="0" xlink:href="images/elAfiladorH.png"/>
-		<image id="elCamoteroH" width="80" height="156" transform="translate(140.7273 148.9216) scale(0.36)" opacity="0" xlink:href="images/elCamoteroH.png"/>
+		<image id="elAfiladorH" width="250" height="222" transform="translate(396.1312 248.3199) scale(0.24)" pointer-events="none" opacity="0" xlink:href="images/elAfiladorH.png"/>
+		<image id="elCamoteroH" width="157" height="304" transform="translate(135.5728 143.2252) scale(0.24)" pointer-events="none" opacity="0" xlink:href="images/elCamoteroH.png"/>
 	</g>
 
 </svg>
 
 <!-- Audio Player Div -->
 	
-	<audio id="player" allow="autoplay" controls="controls"><source id="lAudio" src=""/></audio>
+	<audio id="player" allow="autoplay" muted="muted" controls="controls"><source id="lAudio" src=""/></audio>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

@@ -15,23 +15,12 @@ html {
   width: fill-available;
 }
 
-/*.fore{
-  z-index: 50000;
+.fore{
+  z-index: 5;
   position: absolute;
-  pointer-events: none;
+  right: 30px;
+  top: 50%;
 }
-
-#foreLeft{
-  float: left;
-  top: 0px;
-  left: 0px;
-}*/
-
-/*#foreRight{
-  float: right;
-  bottom: 0px;
-  right: 5px;
-}*/
 
 #player{
   display: table;
