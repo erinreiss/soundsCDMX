@@ -1,3 +1,9 @@
+// Get the audio pre-loaded
+$( document ).ready(function() {
+    pauseTrack("audio/elCamotero.mp3");
+    console.log( "ready!" );
+});
+
 // // Set up some variables
 
 var clickIDs = $(".click");
@@ -6,12 +12,12 @@ var clickIDs = $(".click");
 
 $(clickIDs).mouseenter(
 	function(){
+		$(this).css('cursor', 'pointer');
 		var thisHighlight = (this.id+"H");
+		$("#"+thisHighlight).fadeTo("opacity", "1");
 		var thisAudio = ("audio/"+this.id+".mp3");
 		console.log(thisAudio);
 		changeTrack(thisAudio);
-		$(this).css('cursor', 'pointer');
-		$("#"+thisHighlight).fadeTo("opacity", "1");
 	}
 );
 
@@ -29,8 +35,8 @@ $(clickIDs).mouseleave(
 
 $(clickIDs).click(
 	function(){
-	console.log("clicked: "+this.id);
-			}
+		console.log("clicked: "+this.id);
+	}
 );
 
 // function to reload and play audio player
