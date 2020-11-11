@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#svg{
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+}
+
+/*.fore{
+  z-index: 50000;
+  position: absolute;
+  pointer-events: none;
+}
+
+#foreLeft{
+  float: left;
+  top: 0px;
+  left: 0px;
+}*/
+
+/*#foreRight{
+  float: right;
+  bottom: 0px;
+  right: 5px;
+}*/
+
+#player{
+  display: table;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  }

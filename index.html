@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG Map</title>
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+    </script>
+</head>
+<body>
+
+ <!-- Base Image -->
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Base SVG Container -->
+
+	<!-- NEW SVG from "show code" -->
+	<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 2388.72" xml:space="preserve">
+	
+	<!-- SVG from ManHadun w height: 100vh added -->
+	<!-- 	<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100vw" x="0px" y="0px" viewBox="0 0 785.8 320.7" enable-background="new 0 0 785.8 320.7" xml:space="preserve"> -->
+
+<!-- Base Image -->
+
+	<!-- OLD MAP IMAGE -->
+	<!-- <g id="mapImage"><image overflow-y="hidden" overflow-x="auto" width="2250" height="921" xlink:href="images/map.jpg"  transform="matrix(0.3487 0 0 0.3487 0 -0.4672)"></image></g> -->
+
+	<!-- NEW MAP image from show code -->
+	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImage.jpg"/></g>
+
+<!-- Images to float above and not be clickable -->
+
+	<!-- <g style="display: block;">
+		<image id="foreLeft" class="fore" width="1151" height="1338" transform="translate(0 0.4785) scale(0.24)" xlink:href="images/fore.png"/>
+		<image id="foreClick" class="fore" width="347" height="250" transform="translate(235.3286 133.3973) scale(0.24)" xlink:href="images/click.png"/>
+	</g> -->
+
+<!-- Clickable IDs -->
+
+	<g id="clickIDs">
+		<a href="https://open.spotify.com/episode/3YCvB1zyjXC5mozyQXZikG?go=1&utm_source=embed_v3&t=0&nd=1" target="_blank">
+			<rect id="popUp" x="412.1703" y="174.4157" width="57.3019" height="8.5639" opacity="0"/>
+		</a>
+		<a href="https://99percentinvisible.org/episode/take-a-walk/" target="_blank">
+			<rect id="pi99" x="425.3841" y="184.4149" width="44.088" height="7.1285" opacity="0"/>
+		</a>
+		<rect id="elCamotero" class="click" x="123.0637" y="166.1252" width="26.5052" height="46.6089" opacity="0"/>
+		<rect id="elAfilador" class="click" x="381.907" y="272.4786" width="60.5265" height="31.674" transform="translate(239.3756 -184.0743) rotate(34.9351)" opacity="0"/>
+	</g>
+
+<!-- Hover Highlights -->
+
+	<g id="highlights">
+		<image id="elAfiladorH" width="127" height="113" transform="translate(405.0616 253.4412) scale(0.36)" opacity="0" xlink:href="images/elAfiladorH.png"/>
+		<image id="elCamoteroH" width="80" height="156" transform="translate(140.7273 148.9216) scale(0.36)" opacity="0" xlink:href="images/elCamoteroH.png"/>
+	</g>
+
+</svg>
+
+<!-- Audio Player Div -->
+	
+	<audio id="player" allow="autoplay" controls="controls"><source id="lAudio" src=""/></audio>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
