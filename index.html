@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sounds of CDMX</title>
-<!-- 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,18 +12,29 @@
 
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- Choose language landing page -->
+
+<div class="landing">
+	<img id="welcome" style="height:17vh;" src="images/welcomeES.png"/>
+	<div id="languages">
+		<span id="englishButton">english</span>
+		<span style="padding-left: 9vw;"></span>
+		<span id="spanishButton">español</span>
+	</div>
+</div>
+
 <!-- Images to float above -->
 
-	<div position="absolute">
-		<div id="pauseWrapper" >
-			<img id="pause" src="images/pauseUn.png"/>
- 		</div>
+<div class="site" position="absolute">
+	<div id="pauseWrapper" >
+		<img id="pause" src="images/pauseUn.png"/>
  	</div>
+ </div>
 
 <!-- Base SVG Container -->
 
 	<!-- NEW SVG from "show code" -->
-	<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 2388.72" xml:space="preserve">
+<svg class="site" id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 2388.72" xml:space="preserve">
 	
 	<!-- SVG from ManHadun w height: 100vh added -->
 	<!-- 	<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100vw" x="0px" y="0px" viewBox="0 0 785.8 320.7" enable-background="new 0 0 785.8 320.7" xml:space="preserve"> -->
@@ -33,7 +45,7 @@
 	<!-- <g id="mapImage"><image overflow-y="hidden" overflow-x="auto" width="2250" height="921" xlink:href="images/map.jpg"  transform="matrix(0.3487 0 0 0.3487 0 -0.4672)"></image></g> -->
 
 	<!-- NEW MAP image from show code -->
-	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImageEN.jpg"/></g>
+	<g id="baseImages"><image id="baseImage" overflow="auto" transform="scale(0.24)" xlink:href="images/baseImageEN.jpg"/></g>
 
 <!-- Clickable IDs -->
 
@@ -59,7 +71,7 @@
 
 <!-- Audio Player Div -->
 	
-	<audio id="player" controls="controls"><source id="lAudio" src=""/></audio>
+<audio class="site" id="player" controls="controls"><source id="lAudio" src=""/></audio>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

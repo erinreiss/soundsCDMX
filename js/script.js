@@ -4,11 +4,55 @@ $( document ).ready(function() {
     console.log( "ready!" );
 });
 
-// // Set up some variables
+// Set up some variables
 
 var clickIDs = $(".click");
 
-// // Highlight location with mouse over
+//Hover and Click Listeners for Landing Page
+
+$('#englishButton').mouseenter(
+	function(){
+		$(this).css('cursor', 'pointer');
+		$(this).css('color', 'rgb(253, 183, 26)');
+		$("#welcome").attr("src","images/welcomeEN.png");
+	}
+)
+.mouseleave(
+	function(){
+		$(this).css('cursor', 'default');
+		$(this).css('color', 'rgb(229, 227, 228)');
+	}
+)
+.click(
+	function(){
+		// $("#baseImage").attr('xlink:href',"images/baseImageEN.png");
+		$('.landing').css('display','none')
+		$('.site').css('display','block')
+	}
+);
+
+$('#spanishButton').hover(
+	function(){
+		$(this).css('cursor', 'pointer');
+		$(this).css('color', 'rgb(253, 183, 26)');
+		$("#welcome").attr("src","images/welcomeES.png");
+	}
+)
+.mouseleave(
+	function(){
+		$(this).css('cursor', 'default');
+		$(this).css('color', 'rgb(229, 227, 228)');
+	}
+)
+.click(
+	function(){
+		// $("#baseImage").attr("xlink:href","images/baseImageES.png");
+		$('.landing').css('display','none')
+		$('.site').css('display','block')
+	}
+);
+
+// Highlight location with mouse over
 
 $(clickIDs).mouseenter(
 	function(){

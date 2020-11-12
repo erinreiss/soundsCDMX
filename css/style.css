@@ -8,6 +8,36 @@ html {
   margin: 0;
 }
 
+/*Landing Page*/
+
+.landing{
+  background-color: #231F20;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 900;
+  color: rgb(229, 227, 228);
+  padding-top: 25vh;
+  font-size: 4vh;
+}
+
+#welcome{
+    height: 20vh;
+    margin: auto;
+    display: block;
+}
+
+#languages{
+  padding-top: 20vh;
+  text-align: center;
+}
+
+/*Main Site*/
+
+.site{
+   display: none; 
+}
+
 #svg{
   width: 100%;
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
