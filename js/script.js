@@ -25,16 +25,16 @@ $('#englishButton').mouseenter(
 )
 .click(
 	function(){
-		// $("#baseImage").attr('xlink:href',"images/baseImageEN.png");
-		$('.landing').css('display','none')
-		$('.site').css('display','block')
+		$("#baseImage").attr('xlink:href',"images/baseImageEN.jpg");
+		$('.landing').css('display','none');
+		$('.site').css('display','block');
 	}
 );
 
 $('#spanishButton').hover(
 	function(){
 		$(this).css('cursor', 'pointer');
-		$(this).css('color', 'rgb(253, 183, 26)');
+		$(this).css('color', 'rgb(76, 192, 239)');
 		$("#welcome").attr("src","images/welcomeES.png");
 	}
 )
@@ -46,9 +46,9 @@ $('#spanishButton').hover(
 )
 .click(
 	function(){
-		// $("#baseImage").attr("xlink:href","images/baseImageES.png");
-		$('.landing').css('display','none')
-		$('.site').css('display','block')
+		$("#baseImage").attr('xlink:href',"images/baseImageES.jpg");
+		$('.landing').css('display','none');
+		$('.site').css('display','block');
 	}
 );
 
