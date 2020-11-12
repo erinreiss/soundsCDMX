@@ -1,6 +1,6 @@
 // Get the audio pre-loaded
 $( document ).ready(function() {
-    pauseTrack("audio/elCamotero.mp3");
+    pauseTrack();
     console.log( "ready!" );
 });
 
@@ -31,13 +31,32 @@ $(clickIDs).mouseleave(
 	}
 );
 
-// // Location Click Listener
+// Pause button hover
 
-$(clickIDs).click(
+$("#pauseWrapper").mouseenter(
 	function(){
-		console.log("clicked: "+this.id);
+		$(this).css('cursor', 'pointer');
+		$("#pause").attr("src","images/pauseHov.png");
+		pauseTrack();
 	}
 );
+
+$("#pauseWrapper").mouseleave(
+	function(){
+		console.log("pause out");
+		$(this).css('cursor', 'default');
+		$("#pause").attr("src","images/pauseUn.png");
+	}
+);
+
+// // Location Click Listener
+
+// $("#pauseWrapper").click(
+// 	function(){
+// 		console.log("pause clicked");
+// 		pauseTrack();
+// 	}
+// );
 
 // function to reload and play audio player
 

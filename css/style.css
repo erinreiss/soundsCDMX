@@ -15,12 +15,18 @@ html {
   width: fill-available;
 }
 
+#pauseWrapper{
+  position: fixed;
+  right: 0%;
+  top: 53%;
+  width: 7vw;
+  transform: rotate(90deg);
+}
+
 #pause{
   z-index: 5;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  width: 40px;
+  width: 7vw;
+  pointer-events: none;
 }
 
 #player{

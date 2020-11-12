@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SVG Map</title>
+	<title>Sounds of CDMX</title>
 <!-- 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,10 +13,11 @@
 
 <!-- Images to float above -->
 
-	<div position="relative">
-		<image id="pause"  xlink:href="images/pause.png"/>
-		<!-- <image id="pauseClicked" class="fore" width="40px" xlink:href="images/pauseClicked.png"/> -->
-	</div>
+	<div position="absolute">
+		<div id="pauseWrapper" >
+			<img id="pause" src="images/pauseUn.png"/>
+ 		</div>
+ 	</div>
 
 <!-- Base SVG Container -->
 
@@ -32,7 +33,7 @@
 	<!-- <g id="mapImage"><image overflow-y="hidden" overflow-x="auto" width="2250" height="921" xlink:href="images/map.jpg"  transform="matrix(0.3487 0 0 0.3487 0 -0.4672)"></image></g> -->
 
 	<!-- NEW MAP image from show code -->
-	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImage.jpg"/></g>
+	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImageEN.jpg"/></g>
 
 <!-- Clickable IDs -->
 
@@ -58,7 +59,7 @@
 
 <!-- Audio Player Div -->
 	
-	<audio id="player" allow="autoplay" controls="controls"><source id="lAudio" src=""/></audio>
+	<audio id="player" controls="controls"><source id="lAudio" src=""/></audio>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
