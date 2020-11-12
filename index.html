@@ -3,15 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SVG Map</title>
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-    </script>
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
- <!-- Base Image -->
 
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Images to float above -->
+
+	<div position="relative">
+		<image id="pause"  xlink:href="images/pause.png"/>
+		<!-- <image id="pauseClicked" class="fore" width="40px" xlink:href="images/pauseClicked.png"/> -->
+	</div>
 
 <!-- Base SVG Container -->
 
@@ -28,13 +33,6 @@
 
 	<!-- NEW MAP image from show code -->
 	<g id="baseImage"><image overflow="auto" transform="scale(0.24)" xlink:href="images/baseImage.jpg"/></g>
-
-<!-- Images to float above -->
-
-<!-- 	<g style="display: block;">
-		<image id="pause" class="fore" width="40px" xlink:href="images/pause.png"/>
-		<image id="pauseClicked" class="fore" width="40px" xlink:href="images/pauseClicked.png"/>
-	</g> -->
 
 <!-- Clickable IDs -->
 

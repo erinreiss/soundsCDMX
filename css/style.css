@@ -15,16 +15,14 @@ html {
   width: fill-available;
 }
 
-.fore{
+#pause{
   z-index: 5;
   position: absolute;
   right: 30px;
   top: 50%;
+  width: 40px;
 }
 
 #player{
-  display: table;
-  margin: 0 auto;
-  padding-top: 12px;
-  padding-bottom: 17px;
+  display: none;
   }
