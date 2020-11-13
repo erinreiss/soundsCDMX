@@ -58,7 +58,7 @@ $('#spanishButton').hover(
 
 $(clickIDs).mouseenter(
 	function(){
-		$(this).css('cursor', 'pointer');
+		// $(this).css('cursor', 'pointer');
 		var thisHighlight = (this.id+"H");
 		$("#"+thisHighlight).fadeTo("opacity", "1");
 		var thisAudio = ("audio/"+this.id+".mp3");
@@ -72,7 +72,7 @@ $(clickIDs).mouseleave(
 		var thisHighlight = (this.id+"H");
 		console.log("exit: "+this.id);
 		// pauseTrack()
-		$(this).css('cursor', 'default');
+		// $(this).css('cursor', 'default');
 		$("#"+thisHighlight).fadeTo("opacity", "0");
 	}
 );
@@ -81,7 +81,7 @@ $(clickIDs).mouseleave(
 
 $("#pauseWrapper").mouseenter(
 	function(){
-		$(this).css('cursor', 'pointer');
+		// $(this).css('cursor', 'pointer');
 		$("#pause").attr("src","images/pauseHov.png");
 		pauseTrack();
 	}
@@ -90,7 +90,7 @@ $("#pauseWrapper").mouseenter(
 $("#pauseWrapper").mouseleave(
 	function(){
 		console.log("pause out");
-		$(this).css('cursor', 'default');
+		// $(this).css('cursor', 'default');
 		$("#pause").attr("src","images/pauseUn.png");
 	}
 );
