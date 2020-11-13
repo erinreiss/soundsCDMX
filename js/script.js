@@ -15,6 +15,7 @@ $('#englishButton').mouseenter(
 		$(this).css('cursor', 'pointer');
 		$(this).css('color', 'rgb(253, 183, 26)');
 		$("#welcome").attr("src","images/welcomeEN.png");
+		$('#please').text("please plug in headphones and turn on your computer's volume");		
 	}
 )
 .mouseleave(
@@ -36,6 +37,7 @@ $('#spanishButton').hover(
 		$(this).css('cursor', 'pointer');
 		$(this).css('color', 'rgb(76, 192, 239)');
 		$("#welcome").attr("src","images/welcomeES.png");
+		$('#please').text("por favor, conecte los auriculares y encienda el volumen de su computadora");
 	}
 )
 .mouseleave(

@@ -15,10 +15,8 @@ html {
 /*  width: 100vw;
   height: 100vh;*/
   font-family: 'Source Serif Pro', serif;
-  font-weight: 900;
   color: rgb(229, 227, 228);
   padding-top: 25vh;
-  font-size: 4vh;
 }
 
 #welcome{
@@ -27,9 +25,19 @@ html {
     display: block;
 }
 
+#please{
+  text-align: center;
+  font-weight: 200;
+  font-size: 3vh;
+  font-style: italic;
+}
+
 #languages{
   margin-top: 20vh;
   text-align: center;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 4vh;
 }
 
 /*Main Site*/
@@ -62,3 +70,6 @@ html {
 #player{
   display: none;
   }
+
+.click{
+}
